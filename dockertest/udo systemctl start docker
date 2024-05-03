@@ -1,0 +1,22 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Fri 2024-03-08 18:54:14 IST; 8s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 38183 (dockerd)
+      Tasks: 11
+     Memory: 27.9M
+        CPU: 293ms
+     CGroup: /system.slice/docker.service
+             └─38183 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.096513210+05:30" level=info msg="Starting up"
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.098059332+05:30" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.138989314+05:30" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.140715740+05:30" level=info msg="Loading containers: start."
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.704087949+05:30" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.758900606+05:30" level=info msg="Loading containers: done."
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.771871401+05:30" level=info msg="Docker daemon" commit=061aa95 containerd-snapshotter=false storage-driver=overlay2 version=25.0.4
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.771935323+05:30" level=info msg="Daemon has completed initialization"
+Mar 08 18:54:14 innoura-ThinkPad-T470 dockerd[38183]: time="2024-03-08T18:54:14.813485093+05:30" level=info msg="API listen on /run/docker.sock"
+Mar 08 18:54:14 innoura-ThinkPad-T470 systemd[1]: Started Docker Application Container Engine.
