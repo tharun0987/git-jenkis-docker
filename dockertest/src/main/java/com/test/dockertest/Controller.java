@@ -8,25 +8,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.Serializable;
+import java.time.Instant;
+import java.util.Date;
 
 @RestController
+@RequestMapping("/jenkins")
 public class Controller {
 
 @Autowired
     JavaMailSender mailSender;
     @GetMapping("/run")
-    public ModelAndView getData()
+    public String  getData()
     {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("test.html");
-        Patient patient = new Patient();
-        return modelAndView;
 
-
+        return Instant.now().toString();
     }
 
     public void sendHtmlMessage(String to, String subject, String htmlBody) {
