@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: tharun-test-pod
+spec:
+  containers:
+    - name: my-container
+      image: my-image
+  nodeSelector:
+    pool: testnodepool
